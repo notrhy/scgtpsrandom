@@ -5,7 +5,7 @@ function fp(a, b)
     if xp > 2 or yp > 2 then
         findPath(a, b)
             return true
-        end
+        
     end
     return false
 end
