@@ -30,7 +30,7 @@ function pt()
     for y = y1, 0, -1 do 
         for x = 0, x1 do
             h = checkTile(x, y)
-            if (y == 0 or (h.fg == 0 and checkTile(x, y+1).fg ~= 0)) then 
+            if h.fg == 0 then 
                 ::gg:: 
                 if fp(x, y) then
                     rhy.randomSleep(delay, delay + 100)
