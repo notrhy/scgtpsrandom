@@ -4,8 +4,7 @@ function fp(a, b)
     xp, yp = math.abs(math.floor(getLocal().pos.x / 32) - a), math.abs(math.floor(getLocal().pos.y / 32) - b)
     if xp > 2 or yp > 2 then
         findPath(a, b)
-            return true
-        
+        return true
     end
     return false
 end
