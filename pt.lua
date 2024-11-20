@@ -3,9 +3,7 @@ load(makeRequest("https://raw.githubusercontent.com/notrhy/_0x001/refs/heads/mai
 function fp(a, b)
     xp, yp = math.abs(math.floor(getLocal().pos.x / 32) - a), math.abs(math.floor(getLocal().pos.y / 32) - b)
     if xp > 2 or yp > 2 then
-        teleTo = rhy.checkPath(a, b)
-        if teleTo then
-            rhy.moveTo(teleTo, 3)
+        findPath(a, b)
             if rhy.isOnPos(a, b) then
                 return true
             end
